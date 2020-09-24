@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="950.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.BankAppController">
+   <children>
+      <TextField fx:id="givenName" layoutX="41.0" layoutY="59.0" promptText="Given name" />
+      <TextField fx:id="surName" layoutX="240.0" layoutY="59.0" prefHeight="27.0" prefWidth="176.0" promptText="Surname" />
+      <TextField fx:id="age" layoutX="437.0" layoutY="59.0" prefHeight="27.0" prefWidth="71.0" promptText="Age" />
+      <TextField fx:id="email" layoutX="552.0" layoutY="59.0" prefHeight="27.0" prefWidth="258.0" promptText="E-mail" />
+      <TextField fx:id="phone" layoutX="39.0" layoutY="111.0" prefHeight="27.0" prefWidth="185.0" promptText="Phone" />
+      <TextField fx:id="usernameMake" layoutX="246.0" layoutY="111.0" prefHeight="27.0" prefWidth="194.0" promptText="Username" />
+      <TextField fx:id="passwordMake" layoutX="461.0" layoutY="111.0" prefHeight="27.0" prefWidth="167.0" promptText="Password" />
+      <TextField fx:id="passwordConfirm" layoutX="645.0" layoutY="111.0" prefHeight="27.0" prefWidth="167.0" promptText="Confirm password" />
+      <Button fx:id="signUp" layoutX="855.0" layoutY="97.0" mnemonicParsing="false" onAction="#makeUserAccount" prefHeight="27.0" prefWidth="114.0" text="Sign up" />
+      <Label fx:id="userMade" layoutX="41.0" layoutY="151.0" text="Was the user-account made?" />
+      <Label fx:id="welcome" layoutX="41.0" layoutY="21.0" text="Welcome to the bank! Make a user account:" />
+      <Label fx:id="haveAccountInfo" layoutX="40.0" layoutY="179.0" text="Have an account? Sign in" />
+      <TextField fx:id="username" layoutX="39.0" layoutY="206.0" promptText="Username" />
+      <TextField fx:id="password" layoutX="257.0" layoutY="206.0" promptText="Password" />
+      <Button fx:id="signin" layoutX="515.0" layoutY="206.0" mnemonicParsing="false" onAction="#logIn" prefHeight="27.0" prefWidth="94.0" text="Sign in" />
+      <Label fx:id="signedIn" layoutX="38.0" layoutY="243.0" text="Signed in?">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="makeAccountName" layoutX="39.0" layoutY="475.0" promptText="Name" />
+      <TextField fx:id="makeAccountType" layoutX="245.0" layoutY="475.0" promptText="Type" />
+      <Button fx:id="makeBankAccount" layoutX="450.0" layoutY="475.0" mnemonicParsing="false" onAction="#makeBankAccount" prefHeight="27.0" prefWidth="167.0" text="Make bankaccount" />
+      <TextField fx:id="accessAccountName" layoutX="39.0" layoutY="574.0" prefHeight="27.0" prefWidth="391.0" promptText="Name" />
+      <Label fx:id="makeBankAccountInfo" layoutX="40.0" layoutY="288.0" text="Make a new bank account?">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="access" layoutX="505.0" layoutY="574.0" mnemonicParsing="false" onAction="#AccessBankAccount" prefHeight="27.0" prefWidth="114.0" text="Access" />
+      <Label fx:id="accessAccountInfo" layoutX="40.0" layoutY="550.0" text="Access a bankaccount:" />
+      <Label fx:id="yourAccounts" layoutX="664.0" layoutY="354.0" text="These are your accounts:">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <TextField fx:id="amount" layoutX="39.0" layoutY="685.0" promptText="Amount" />
+      <TextField fx:id="toAccount" layoutX="234.0" layoutY="685.0" promptText="To account" />
+      <Button fx:id="deposit" layoutX="38.0" layoutY="721.0" mnemonicParsing="false" onAction="#deposit" prefHeight="27.0" prefWidth="105.0" text="Deposit" />
+      <Button fx:id="withdraw" layoutX="162.0" layoutY="721.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="27.0" prefWidth="105.0" text="Withdraw" />
+      <Button fx:id="transfer" layoutX="291.0" layoutY="721.0" mnemonicParsing="false" onAction="#transfer" prefHeight="27.0" prefWidth="105.0" text="Transfer" />
+      <Button fx:id="signOut" layoutX="900.0" layoutY="892.0" mnemonicParsing="false" onAction="#SignOut" text="Sign out" />
+      <Label fx:id="status" layoutX="43.0" layoutY="761.0" text="Status" />
+      <Label fx:id="accountAction" layoutX="43.0" layoutY="849.0" text="action made" />
+      <Label fx:id="accountTypes" layoutX="41.0" layoutY="318.0" text="Account types you can make:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="wasBankAccountMade" layoutX="47.0" layoutY="510.0" text="account made" />
+      <Label fx:id="accessed" layoutX="38.0" layoutY="612.0" text="accesed account" />
+      <Button fx:id="deleteUser" layoutX="791.0" layoutY="892.0" mnemonicParsing="false" onAction="#deleteUser" text="Delete user" />
+      <Label fx:id="nowManaging" layoutX="40.0" layoutY="654.0" text="you are now managing your account, what do you want to do?" />
+      <Button fx:id="delete" layoutX="533.0" layoutY="721.0" mnemonicParsing="false" onAction="#deleteAccount" prefHeight="27.0" prefWidth="87.0" text="Delete" />
+      <Button fx:id="pay" layoutX="426.0" layoutY="721.0" mnemonicParsing="false" onAction="#pay" prefHeight="27.0" prefWidth="94.0" text="Pay" />
+      <TextField fx:id="reciever" layoutX="428.0" layoutY="685.0" prefHeight="27.0" prefWidth="185.0" promptText="Recipient Username (pay)" />
+      <Label fx:id="ifDelete" layoutX="793.0" layoutY="832.0" text="if delete: all accounts empty" />
+   </children>
+</AnchorPane>
